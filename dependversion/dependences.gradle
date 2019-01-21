@@ -1,0 +1,54 @@
+ext {
+
+    //Android
+    androidBuildToolsVersion = "27.1.1"
+    androidMinSdkVersion = 17
+    androidTargetSdkVersion = 27
+    androidCompileSdkVersion = 27
+
+
+
+    androidWidgetsVersion = "27.1.1"
+    constraintVs = "1.1.3"
+    loggerVersion = "2.2.0"
+    webViewVersion = "4.0.2"
+    baseRecyclerViewAdapterHelperVersion = "2.9.42"
+    lottieVersion = "2.7.0"
+    immersionBarVersion = "2.3.3-beta09"
+    rxpermissionVs = "0.10.2"
+    butterVs = "8.8.1"
+    //test
+    leakcanaryVs = "1.6.2"
+    daggerVs = "2.20"
+
+
+
+    androidWidgets = [
+            constraint: "com.android.support.constraint:constraint-layout:${constraintVs}",
+            appcompat : "com.android.support:appcompat-v7:${androidWidgetsVersion}",
+            recycler  : "com.android.support:recyclerview-v7:${androidWidgetsVersion}",
+            design    : "com.android.support:design:${androidWidgetsVersion}",
+    ]
+
+    tools = [
+            logger       : "com.orhanobut:logger:${loggerVersion}",
+            webView      : "com.just.agentweb:agentweb:${webViewVersion}",
+            adapterHelper: "com.github.CymChad:BaseRecyclerViewAdapterHelper:${baseRecyclerViewAdapterHelperVersion}",
+            lottie       : "com.airbnb.android:lottie:${lottieVersion}",
+            immersionbar : "com.gyf.immersionbar:immersionbar:${immersionBarVersion}",
+            rxpermission : "com.github.tbruyelle:rxpermissions:${rxpermissionVs}",
+            bugly        : "com.tencent.bugly:crashreport:latest.release",
+            dagger       : "com.google.dagger:dagger:${daggerVs}",
+            daggerAnno   : "com.google.dagger:dagger-compiler:${daggerVs}",
+            butterKnief  : "com.jakewharton:butterknife:${butterVs}",
+            butterAnno   : "com.jakewharton:butterknife-compiler:${butterVs}"
+
+    ]
+
+    testTools = [
+            leakcanaryAndroid    : "com.squareup.leakcanary:leakcanary-android:${leakcanaryVs}",
+            leakcanaryAndroidNoop: "com.squareup.leakcanary:leakcanary-android-no-op:${leakcanaryVs}",
+            leakcanaryFragment   : "com.squareup.leakcanary:leakcanary-support-fragment:${leakcanaryVs}"
+
+    ]
+}

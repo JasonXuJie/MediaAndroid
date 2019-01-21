@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_audio_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="40dp"
+        android:textSize="40sp"/>
+
+    <Button
+        android:id="@+id/btn_audio_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始录音"
+        android:textColor="@color/black"
+        android:background="@color/C_FF9900"
+       />
+
+    <Button
+        android:id="@+id/btn_audio_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="结束录音"
+        android:background="@color/C_FF9900"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_audio_wav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="pcm转wav"
+        android:background="@color/C_FF9900"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_audio_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="播放"
+        android:background="@color/C_FF9900"
+        android:layout_marginTop="10dp"/>
+
+
+
+</LinearLayout>
